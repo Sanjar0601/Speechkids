@@ -1,0 +1,381 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!-- META ============================================= -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="" />
+
+    <!-- DESCRIPTION -->
+    <meta name="description" content="salom" />
+
+    <!-- OG -->
+    <meta property="og:title" content="salom" />
+    <meta property="og:description" content="salom" />
+    <meta property="og:image" content="" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- FAVICONS ICON ============================================= -->
+    <link
+      rel="icon"
+      href="{% static 'assets/images/favicon.ico' %}"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="{% static 'assets/images/favicon.png' %}"
+    />
+
+    <!-- PAGE TITLE HERE ============================================= -->
+    <title>Yosh bolalar nutqini rivojlantirish</title>
+
+    <!-- MOBILE SPECIFIC ============================================= -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- All PLUGINS CSS ============================================= -->
+    <link rel="stylesheet" href="{% static 'assets/css/assets.css' %}" />
+    {% comment %}
+    <link rel="stylesheet" type="text/css" href="assets/css/assets.css" />
+    {% endcomment %}
+
+    <!-- TYPOGRAPHY ============================================= -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'assets/css/typography.css'%}"
+    />
+
+    <!-- SHORTCODES ============================================= -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'assets/css/shortcodes/shortcodes.css' %}"
+    />
+
+    <!-- STYLESHEETS ============================================= -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'assets/css/style.css' %}"
+    />
+    <link
+      class="skin"
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'assets/css/color/color-1.css' %}"
+    />
+
+    <!-- REVOLUTION SLIDER CSS ============================================= -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'assets/vendors/revolution/css/layers.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'assets/vendors/revolution/css/settings.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'assets/vendors/revolution/css/navigation.css' %}"
+    />
+    <!-- REVOLUTION SLIDER END -->
+  </head>
+	<body id="bg">
+		
+			<!-- Header Top ==== -->
+			<header class="header rs-nav header-transparent">
+				
+				<div class="sticky-header navbar-expand-lg">
+					<div class="menu-bar clearfix">
+						<div class="container clearfix">
+							<!-- Header Logo ==== -->
+							<div class="menu-logo">
+								<a href="{% url 'home' %}"><img src="{% static 'assets/images/logo-white.png' %}" alt=""></a>
+							</div>
+							<!-- Mobile Nav Button ==== -->
+							<button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+							<!-- Author Nav ==== -->
+							<div class="secondary-menu">
+								<div class="secondary-inner">
+									<ul>
+										<li><a href="javascript:;" class="btn-link"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="javascript:;" class="btn-link"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="javascript:;" class="btn-link"><i class="fa fa-linkedin"></i></a></li>
+										<!-- Search Button ==== -->
+										<li class="search-btn"><button id="quik-search-btn" type="button" class="btn-link"><i class="fa fa-search"></i></button></li>
+									</ul>
+								</div>
+							</div>
+							<!-- Search Box ==== -->
+							<div class="nav-search-bar">
+								<form action="#">
+									<input name="search" value="" type="text" class="form-control" placeholder="Sayt bo'ylab qidirish">
+									<span><i class="ti-search"></i></span>
+								</form>
+								<span id="search-remove"><i class="ti-close"></i></span>
+							</div>
+							<!-- Navigation Menu ==== -->
+							<div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
+								<div class="menu-logo">
+									<a href="{% url 'home' %}"><img src="{% static 'assets/images/logo.png' %} " alt=""></a>
+								</div>
+								<ul class="nav navbar-nav">	
+									<li class="active"><a href="{% url 'home' %}">BOSH SAHIFA</a>
+										
+									</li>
+								
+									
+									<li><a href="{% url 'v1050' %}">ALOQA</a>
+									</li>
+									<li><a href="{% url 'v1040' %}">BIZ HAQIMIZDA</a>
+									</li>
+									
+								</ul>
+								<div class="nav-social-link">
+									<a href="javascript:;"><i class="fa fa-facebook"></i></a>
+									<a href="javascript:;"><i class="fa fa-google-plus"></i></a>
+									<a href="javascript:;"><i class="fa fa-linkedin"></i></a>
+								</div>
+							</div>
+							<!-- Navigation Menu END ==== -->
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- header END ==== -->
+			<!-- Inner Content Box ==== -->
+			<div class="page-content">
+				
+				<!-- Page Heading Box ==== -->
+				<div class="page-banner ovbl-dark" style="background-image:url({% static 'assets/images/banner/banner1.jpg' %});">
+					<div class="container">
+						<div class="page-banner-entry">
+							<h1 class="text-white">BIZ HAQIMIZDA </h1>
+							
+						</div>
+					</div>
+				</div>
+				<!-- Our Status ==== -->
+				<div class="section-area content-inner section-sp1">
+					<div class="container">
+						<div class="section-content">
+							<div class="row">
+								<div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+									<div class="counter-style-1">
+										<div class="text-primary">
+											<span class="counter">300</span><span>+</span>
+										</div>
+										<span class="counter-text">Tugallangan loyihalar</span>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+									<div class="counter-style-1">
+										<div class="text-black">
+											<span class="counter">900</span><span>+</span>
+										</div>
+										<span class="counter-text">Mijozlar</span>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+									<div class="counter-style-1">
+										<div class="text-primary">
+											<span class="counter">150</span><span>+</span>
+										</div>
+										<span class="counter-text">Javob berilgan savollar</span>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-6 col-sm-6 col-6 m-b30">
+									<div class="counter-style-1">
+										<div class="text-black">
+											<span class="counter">100</span><span>+</span>
+										</div>
+										<span class="counter-text">Buyurtmalar</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="breadcrumb-row">
+					<div class="container">
+						<ul class="list-inline">
+							<li>Biz haqimizda </li>
+						</ul>
+					</div>
+				</div>
+				<!-- Page Heading Box END ==== -->
+				<!-- Page Content Box ==== -->
+				<div class="content-block">
+					<!-- About Us ==== -->
+					<div class="section-area section-sp1">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+									<div class="feature-container">
+										<div class="feature-md text-white m-b20">
+											<a href="#" class="icon-cell"><img src="{% static 'assets/images/icon/icon1.png' %}" alt=""/></a> 
+										</div>
+										<div class="icon-content">
+											<h5 class="ttr-tilte">Bizning yo'nalish</h5>
+											<p>Ta'limda axborot texnologiyalardan foydalanishni kengaytirish</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+									<div class="feature-container">
+										<div class="feature-md text-white m-b20">
+											<a href="#" class="icon-cell"><img src="{% static 'assets/images/icon/icon2.png' %}" alt=""/></a> 
+										</div>
+										<div class="icon-content">
+											<h5 class="ttr-tilte">Kingster prinsipi</h5>
+											<p>Ta'lim tizimini kuchaytirish</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+									<div class="feature-container">
+										<div class="feature-md text-white m-b20">
+											<a href="#" class="icon-cell"><img src="{% static 'assets/images/icon/icon3.png' %} " alt=""/></a> 
+										</div>
+										<div class="icon-content">
+											<h5 class="ttr-tilte">Muvaffaqiyat kaliti</h5>
+											<p>Yangi bilimlarni egallash</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- About Us END ==== -->
+					<!-- Our Story ==== -->
+					<div class="section-area bg-gray section-sp1 our-story">
+						<div class="container">
+							<div class="row align-items-center d-flex">
+								<div class="col-lg-5 col-md-12 heading-bx">
+									<h2 class="m-b10">Bizning maqsadimiz</h2>
+									<h5 class="fw4">Bola nutq san'atini to'liq va juda keng egallashi lozimdir </h5>
+									<p>Xalq ta'limi, maktabgacha ta'lim, oliy va o'rta maxsus ta'lim vazirliklari, O'zbekiston Respublikasi Vazirlar Mahkamasi huzuridagi Ta'lim sifatini nazorat qilish davlat inspeksiyasi, Bandlik va mehnat munosabatlari vazirligi, boshqa davlat organlari, ilmiy doiralar, BMT va xalqaro tashkilotlar O'zbekistondagi ta'lim sifatini oshirishning dolzarb muammolari va imkoniyatlarini muhokama qildilar. Muloqotda qaror qabul qiluvchilar, pedagoglar, tadbirkorlar va yoshlarning o'zlari ishtirok etdilar.
+										2019 yil aprelida O'zbekiston Prezidenti 2030 yilga qadar Xalq ta'limi tizimini rivojlantirish kontseptsiyasini tasdiqladi. Ta'lim infratuzilmasini yaxshilash va kengaytirish hamda o'qitish metodikalarini takomillashtirishdan tashqari, konsepsiyada talabalar o'zlashtirishini baholashning xalqaro tadqiqoti '' PISA reytingiga ko'ra O'zbekiston 2030 yilga qadar jahonning 30 ta etakchi mamlakatlari qatoriga kirishi maqsad qilib qo'yilgan.</p>
+									<a href="#" class="btn">Ko'proq o'qing</a>
+								</div>
+								<div class="col-lg-7 col-md-12 heading-bx p-lr">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Our Story END ==== -->
+				</div>		
+				<!-- Footer ==== -->
+				<footer>
+					<div class="footer-top">
+						<div class="pt-exebar">
+							<div class="container">
+								<div class="d-flex align-items-stretch">
+									
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-4 col-md-12 col-sm-12 footer-col-4">
+									<div class="widget">
+										<h5 class="footer-title">BOG'LANISH</h5>
+										<!-- <p class="text-capitalize m-b20">Weekly Breaking news analysis and cutting edge advices on job searching.</p> -->
+										<div class="subscribe-form m-b20">
+											<form class="subscription-form" action="" method="post">
+												<div class="ajax-message"></div>
+												<div class="input-group">
+													<input name="email" required="required"  class="form-control" placeholder="Sizning email adres" type="email">
+													<span class="input-group-btn">
+														<button name="submit" value="Submit" type="submit" class="btn"><i class="fa fa-arrow-right"></i></button>
+													</span> 
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-5 col-md-7 col-sm-12">
+									<div class="row">
+										<div class="col-4 col-lg-4 col-md-4 col-sm-4">
+											<div class="widget footer_widget">
+												<h5 class="footer-title"></h5>
+												<ul>
+													<li><a href="{% url 'home' %}">BOSH SAHIFA</a></li>
+													<li><a href="{% url 'v1040' %}">BIZ HAQIMIZDA</a></li>
+													<li><a href="{% url 'v1050' %}">ALOQA</a></li>
+													
+												</ul>
+											</div>
+										</div>
+										<div class="col-4 col-lg-4 col-md-4 col-sm-4">
+											<div class="widget footer_widget">
+												
+										</div>
+										</div>
+										
+									</div>
+								</div>
+								<div class="col-12 col-lg-3 col-md-5 col-sm-12 footer-col-4">
+									<div class="widget widget_gallery gallery-grid-4">
+										<h5 class="footer-title">FON RASMLARI</h5>
+										<ul class="magnific-image">
+											<li><a "{% static 'assets/images/gallery/pic1.jpg' %}" class="magnific-anchor"><img src="{% static 'assets/images/gallery/pic1.jpg' %}" alt=""></a></li>
+											<li><a "{% static 'assets/images/gallery/pic2.jpg' %}" class="magnific-anchor"><img src="{% static 'assets/images/gallery/pic2.jpg' %}" alt=""></a></li>
+											<li><a "{% static 'assets/images/gallery/pic3.jpg' %}" class="magnific-anchor"><img src="{% static 'assets/images/gallery/pic3.jpg' %}" alt=""></a></li>
+											<li><a "{% static 'assets/images/gallery/pic4.jpg' %}" class="magnific-anchor"><img src="{% static 'assets/images/gallery/pic4.jpg' %}" alt=""></a></li>
+											<li><a "{% static 'assets/images/gallery/pic5.jpg' %}" class="magnific-anchor"><img src="{% static 'assets/images/gallery/pic5.jpg' %}" alt=""></a></li>
+											<li><a "{% static 'assets/images/gallery/pic6.jpg' %}" class="magnific-anchor"><img src="{% static 'assets/images/gallery/pic6.jpg' %}" alt=""></a></li>
+											<li><a "{% static 'assets/images/gallery/pic7.jpg' %}" class="magnific-anchor"><img src="{% static 'assets/images/gallery/pic7.jpg' %}" alt=""></a></li>
+											<li><a "{% static 'assets/images/gallery/pic8.jpg' %}" class="magnific-anchor"><img src="{% static 'assets/images/gallery/pic8.jpg' %}" alt=""></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-bottom">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-12 col-md-12 col-sm-12 text-center"> <a target="_blank" href=""></a></div>
+							</div>
+						</div>
+					</div>
+				</footer>
+				<!-- Footer END ==== -->
+				<button class="back-to-top fa fa-chevron-up" ></button>
+			
+
+			<!-- External JavaScripts -->
+
+			<script src="{% static '/assets/vendors/bootstrap/js/popper.min.js' %}"></script>
+			<script src="{% static '/assets/vendors/bootstrap/js/bootstrap.min.js' %}"></script>
+			<script src="{% static '/assets/vendors/bootstrap-select/bootstrap-select.min.js' %}"></script>
+			<script src="{% static '/assets/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js' %}"></script>
+			<script src="{% static '/assets/vendors/magnific-popup/magnific-popup.js' %}"</script>
+			<script src="{% static '/assets/vendors/counter/waypoints-min.js' %}"</script>
+			<script src="{% static '/assets/vendors/counter/counterup.min.js' %}"</script>
+			<script src="{% static '/assets/vendors/imagesloaded/imagesloaded.js' %}"</script>
+			<script src="{% static '/assets/vendors/masonry/masonry.js' %}"</script>
+			<script src="{% static '/assets/vendors/masonry/filter.js' %}"</script>
+			<script src="{% static '/assets/vendors/owl-carousel/owl.carousel.js' %}"</script>
+			<script src="{% static '/assets/js/functions.js' %}"</script>
+			<script src="{% static '/assets/js/contact.js' %}"</script>
+			<script src="{% static '/assets/vendors/switcher/switcher.js' %}"></script>
+			<!-- Revolution JavaScripts Files -->
+	</body>
+</html>
